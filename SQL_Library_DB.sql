@@ -9,7 +9,7 @@ CREATE TABLE Library_Branch (
 
 CREATE TABLE Publisher (
 	PublisherName VARCHAR(50) PRIMARY KEY NOT NULL,
-	Address VARCHAR(50) NOT NULL,
+	Address VARCHAR(100) NOT NULL,
 	Phone VARCHAR(30) NOT NULL
 );
 
@@ -53,6 +53,26 @@ INSERT INTO Library_Branch
 	('Sharpstown','7660 Osage St'),
 	('Elma','118 N 1st St'),
 	('Holbrook','403 S Park St')
+;
+
+INSERT INTO Publisher
+	(PublisherName, Address, Phone)
+	VALUES
+	('Picador','20 New Wharf Rd, Kings Cross, London N1 9RR, United Kingdom','+44 20 7014 6000'),
+	('Tor','120 Broadway, New York, NY 10271','(212) 455-3670'),
+	('Penguin Classics','80 Strand, London WC2R 0RL, United Kingdom','+44 20 7139 3000'),
+	('First Second','120 Broadway, New York, NY 10271','(212) 490-0666'),
+	('Viking', '32 East 48th Street. New York, NY 10017', '(212) 490-0667'),
+	('Atria', '1230 6th Ave, New York, NY 10020', '(212) 698-7086'),
+	('Riverhead Books', '375 Hudson Street, New York, NY 10014', '(212) 366-2547'),
+	('Duke University Press', '905 W Main St Suite 18-B, Durham, NC 27701', '(919) 688-5134'),
+	('Propeller Books', 'Portland, OR', 'not listed'),
+	('Berkley Books', '75 Hudson Street, New York, NY 10013', '(212) 366-2000'),
+	('Gollancz','3rd Floor, Carmelite House, 50 Victoria Embankment, London, EC4Y 0DZ','+44 20 3122 6000'),
+	('Bloomsbury', '1385 Broadway, 5th Floor, New York, NY 10018', '(212) 419-5300'),
+	('Philomel Books', '345 Hudson St. New York NY 10014', '212 414-3610'),
+	('Scribner', '1230 6th Ave, New York, NY 10020', '(212) 698-7000'),
+	('Random House','1745 Broadway, New York, NY 10019','(800) 793-2665')
 ;
 
 INSERT INTO Books
@@ -103,26 +123,6 @@ INSERT INTO Book_Authors
 	(18,'Stephen King'),
 	(19, 'Natasha Pulley'),
 	(20,'Cormac McCarthy')
-;
-
-INSERT INTO Publisher
-	(PublisherName, Address, Phone)
-	VALUES
-	('Picador','20 New Wharf Rd, Kings Cross, London N1 9RR, United Kingdom','+44 20 7014 6000'),
-	('Tor','120 Broadway, New York, NY 10271','(212) 455-3670'),
-	('Penguin Classics','80 Strand, London WC2R 0RL, United Kingdom','+44 20 7139 3000'),
-	('First Second','120 Broadway, New York, NY 10271','(212) 490-0666'),
-	('Viking', '32 East 48th Street. New York, NY 10017', '(212) 490-0667'),
-	('Atria', '1230 6th Ave, New York, NY 10020', '(212) 698-7086'),
-	('Riverhead Books', '375 Hudson Street, New York, NY 10014', '(212) 366-2547'),
-	('Duke University Press', '905 W Main St Suite 18-B, Durham, NC 27701', '(919) 688-5134'),
-	('Propeller Books', 'Portland, OR', 'not listed'),
-	('Berkley Books', '75 Hudson Street, New York, NY 10013', '(212) 366-2000'),
-	('Gollancz','3rd Floor, Carmelite House, 50 Victoria Embankment, London, EC4Y 0DZ','+44 20 3122 6000'),
-	('Bloomsbury', '1385 Broadway, 5th Floor, New York, NY 10018', '(212) 419-5300'),
-	('Philomel Books', '345 Hudson St. New York NY 10014', '212 414-3610'),
-	('Scribner', '1230 6th Ave, New York, NY 10020', '(212) 698-7000'),
-	('Random House','1745 Broadway, New York, NY 10019','(800) 793-2665')
 ;
 
 INSERT INTO Book_Copies
